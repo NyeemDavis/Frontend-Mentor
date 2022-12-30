@@ -2,104 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Notifications page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 15px;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
   <div class="notifs">
     <header class="notif-header"> 
       <h2>Notifications</h2>
-      <p>3</p>
-      <span>Mark all as read<span> 
+      <div class="number-3">3</div>
+      <span id="changeUnread">Mark all as read</span> 
     </header>
-
     <div class="notif-card unread">
+      <div class="notif-img-div">
+        <img class="notif-img" src="./assets/images/avatar-mark-webber.webp" alt="Avatar for Mark Webber">
+      </div>
       <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-mark-webber.webp">
-        <p class="userActivity">
+        <p class="user-activity">
           <strong>Mark Webber</strong> reacted to your recent post <b class="caption">My first tournament today</b>
         </p>
+        <span class="time">1m ago</span>
       </div>
-      <span class="time">1m ago</span>
     </div>
-
     <div class="notif-card unread">
+      <img class="notif-img" src="./assets/images/avatar-angela-gray.webp" alt="Avatar for Angela Gray">
       <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-angela-gray.webp">
-        <p class="userActivity">
+        <p class="user-activity">
           <strong>Angela Gray</strong> followed you
         </p>
+        <span class="time">1m ago</span>
       </div>
-      <span class="time">1m ago</span>
     </div>
-
     <div class="notif-card unread">
-      <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-jacob-thompson.webp">
-        <p class="userActivity">
-          <strong>Jacob Thompson</strong> has joined your group <b class="group"> Chess Club</b>
-        </p>
+      <div class="notif-image-div">
+        <img class="notif-img" src="./assets/images/avatar-jacob-thompson.webp" alt="Avatar for Jacob Thompson">
       </div>
-      <span class="time">1 day ago</span>
-    </div>
- 
-    <div class="notif-card">
       <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-rizky-hasanuddin.webp">
-        <p class="userActivity">
+        <p class="user-activity">
+          <strong>Jacob Thompson</strong> has joined your group <b class="group">Chess Club</b>
+        </p>
+        <span class="time">1 day ago</span>
+      </div>
+    </div>
+    <div class="notif-card rizky-card">
+      <img class="notif-img" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Avatar for Rizky Hasanuddin">
+      <div class="notif-info rizky">
+        <p class="user-activity">
           <strong>Rizky Hasanuddin</strong> sent you a private message
         </p>
+        <span class="time">5 days ago</span>
       </div>
-      <span class="time">5 days ago</span>
-      <div class="message">
-        <p> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+      <div class="private-message">
+        <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
       </div>
     </div>
-
     <div class="notif-card">
+      <img class="notif-img" src="./assets/images/avatar-kimberly-smith.webp" alt="Avatar for Kimberly Smith">
       <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-kimberly-smith.webp">
-        <p class="userActivity">
+        <p class="user-activity">
           <strong>Kimberly Smith</strong> commented on your picture
         </p> 
+        <span class="time">1 week ago</span>
       </div>
-      <span class="time">1 week ago</span> 
     </div>
-
     <div class="notif-card">
+      <img class="notif-img" src="./assets/images/avatar-nathan-peterson.webp" alt="Avatar for Nathan Peterson">
       <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-nathan-peterson.webp">
-        <p class="userActivity">
-          <strong>Nathan Peterson</strong> reacted to your recent post <b class="caption"> 5 end-game strategies to increase your win rate</b>
+        <p class="user-activity">
+          <strong>Nathan Peterson</strong> joined your group <b class="group">Chess Club</b>
         </p>
+        <span class="time">1 week ago</span>
       </div>
-      <span class="time">2 weeks ago</span>
     </div>
-
-    <div class="notif-card">
-      <div class="notif-info">
-        <img class="notif-img" src="./assets/images/avatar-anna-kim.webp">
-        <p class="userActivity">
-          <strong>Anna Kim</strong> left the group <b class="group"> Chess Club</b>
-        </p>
-      </div>
-      <span class="time">2 weeks ago</span>
-    </div>
-
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
