@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,68 +16,118 @@
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+<div class="main-container">
 
-  Dark Mode
-
+   <div class="header-container">
+     <div class="header-container-left">
+       <h2> Social Media Dashboard</h2>
+         <p>Total Followers: 23,004</p>
+      </div>
+       <span>Dark Mode</span>
+     </div>
+    
+      
+    
+      <div class="socials-container">
+        <div class="social facebook">
+            
+            <div class="tag-and-icon">
+              <h5 class="tag">
+                <img class='social-icon' src="./images/icon-facebook.svg" alt="">@nathanf</h5>
+            </div>
+            <h1 class="follower-number">1987</h1>
+            <p class="follower-type">FOLLOWERS</p>
+            <span style ='color:  hsl(163, 72%, 41%)'>12 Today</span>
+      </div>
+    
+     <div class="social twitter">
+        <div class="social-information">
+          <div class="tag-and-icon">
+            <h5 class="tag">
+              <img class='social-icon' src="./images/icon-twitter.svg" alt="">@nathanf</h5>
+          </div>
+          <h1 class="follower-number">1044</h1>
+          <p class="follower-type">FOLLOWERS</p>
+          <span style ='color:  hsl(163, 72%, 41%)'>99 Today</span>
+        </div>
+     </div>
+    
+      <div class="social instagram">
+        <div class="social-information">
+          <div class="tag-and-icon">
+            <h5 class="tag">
+              <img class='social-icon' src="./images/icon-instagram.svg" alt="">@realnathanf</h5>
+          </div>
+          <h1 class="follower-number">11k</h1>
+          <p class="follower-type">FOLLOWERS</p>
+          <span style ='color:  hsl(163, 72%, 41%)'><i class="./images/icon-up.svg"></i>1099 Today</span>
+        </div>
+      </div>
+    
+      <div class="social youtube">
+        <div class="social-information">
+          <div class="tag-and-icon">
+            <h5 class="tag">
+              <img class='social-icon' src="./images/icon-youtube.svg" alt="">Nathan F.</h5>
+          </div>
+          <h1 class="follower-number">8239</h1>
+          <p class="follower-type">SUBSCRIBERS</p>
+          <span style ='color:  hsl(356, 69%, 56%)'>144 Today</span>
+        </div>
+      </div>
+    </div>
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+    <h2 class="overview-heading">Overview - Today</h2>
+    <div class="overview-container">
+      <div class="stats">
+        <h3>Page Views</h3>
+        <h2>87</h2>
+        <span>3</span>%
+      </div>
+    
+      <div class="stats">
+        <h3>Likes</h3>
+        <h2>52</h2>
+        <span>2%</span>
+      </div>
+    
+      <div class="stats">
+        <h3>Likes</h3>
+        <h2>5462</h2>
+        <span>2257</span>%
+      </div>
+    
+      <div class="stats">
+        <h3>Profile Views</h3>
+        <h2>52k</h2>
+        <span>1375</span>%
+      </div>
+    
+      <div class="stats">
+        <h3>Retweets</h3>
+        <h2>117</h2>
+        <span>303</span>%
+      </div>
+    
+      <div class="stats">
+        <h4>Likes</h4>
+        <h2>507</h2>
+        <span>553%</span>
+      </div>
+    
+      <div class="stats">
+        <h3>Likes</h3>
+        <h2>107</h2>
+        <span>19%</span>
+      </div>
+    
+      <div class="stats">
+        <h3>Total Views</h3>
+        <h2>1407</h2>
+        <span>12%</span>
+      </div>
+    </div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
